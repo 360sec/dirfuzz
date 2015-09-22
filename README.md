@@ -1,7 +1,7 @@
 # dirfuzz
 多线程网站目录穷举扫描
 > 原作者邮箱：ringzero@0x557.org<br />
-> 修改完善：360sec@github.com<br />
+> 修改完善：NoTrackMe@163.com<br />
 
 
 # 使用方法
