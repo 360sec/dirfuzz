@@ -13,9 +13,9 @@ python dirfuzz.py www.wooyun.org jsp
 
 # 配置说明
 ``` python
-using_dic = './dics/dirs.txt' # 使用的字典文件
 using_dic = './dics/directory-list-2.3-big.txt' # 使用的字典文件
 threads_count = 50 # 线程数
+timeout = 3 # 超时时间
 allow_redirects = True # 是否允许URL重定向
 headers = { # HTTP 头设置
 	'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20',
