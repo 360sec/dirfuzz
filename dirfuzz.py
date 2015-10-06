@@ -21,8 +21,8 @@ import Queue
 
 # 全局配置
 monitor = {'console_width':getTerminalSize()[0],'lock':threading.Lock()}
-#using_dic = './dics/dirs.txt' # 使用的字典文件
-using_dic = './dics/directory-list-2.3-big.txt' # 使用的字典文件
+using_dic = './dics/dirs.txt' # 使用的字典文件
+#using_dic = './dics/directory-list-2.3-big.txt' # 使用的字典文件
 threads_count = 50 # 线程数
 timeout = 3 # 超时时间
 allow_redirects = True # 是否允许URL重定向
