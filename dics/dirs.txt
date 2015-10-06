@@ -2270,6 +2270,7 @@ invisimail
 invoker
 invoker/JMXInvokerServlet
 ip.txt
+ip.%EXT%
 ip_configs/
 iradmin
 iredadmin
