@@ -57,8 +57,8 @@ class WyWorker(threading.Thread):
 				url = self.queue.get_nowait()
 				results = dir_check(url)
 				msg = "%s records left             [%s]:%s" % (str(self.queue.qsize()),results.status_code,results.url)
-				if results.status_code == requests.codes.ok:
-					dir_exists.append(url)
+				if results.status_code == requests.codes.ok and results.url not in dir_exists:
+					dir_exists.append(results.url)
 					monitor['lock'].acquire()
 					sys.stdout.write('\r' + msg + ' ' * (monitor['console_width'] -len(msg)) + '\n')
 					monitor['lock'].release()
