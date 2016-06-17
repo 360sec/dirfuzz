@@ -137,7 +137,8 @@ class CLIOutput(object):
         self.printNewLine(message)
 
     def printWarning(self, reason):
-        message = Style.BRIGHT + Fore.YELLOW + reason + Style.RESET_ALL
+        message = Style.BRIGHT + Fore.GREEN + reason + Style.RESET_ALL
+        message = Fore.GREEN + reason + Style.RESET_ALL
         self.printNewLine(message)
 
     def printHeader(self, text):
